@@ -39,7 +39,7 @@ jobs:
 
       - name: Restaurar dependencias
         run: |
-          cd "Seguridad/Seguridad.API/API"
+          cd "Seguridad/Seguridad.API"
           dotnet restore "Abstracciones/Abstracciones.csproj"
           dotnet restore "DA/DA.csproj"
           dotnet restore "Flujo/Flujo.csproj"
