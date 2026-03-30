@@ -54,7 +54,7 @@ jobs:
 
       - name: Publicar (dotnet publish)
         run: |
-          cd "/Seguridad/Seguridad.API"
+          cd "Seguridad/Seguridad.API"
           dotnet publish "API/API.csproj" \
             --configuration Release \
             --no-build \
@@ -65,4 +65,4 @@ jobs:
         with:
           app-name:        ${{ env.AZURE_WEBAPP_NAME }}
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_SEGURIDAD }}
-          package:         './Seguridad/Seguridad.API/API/publish'
+          package:         './Seguridad/Seguridad.API/publish'
