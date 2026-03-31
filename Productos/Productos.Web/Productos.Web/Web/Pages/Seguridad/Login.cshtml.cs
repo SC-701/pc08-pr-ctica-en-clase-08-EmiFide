@@ -10,7 +10,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text.Json;
 
-namespace Web.Pages.Cuenta
+namespace Web.Pages.Seguridad
 {
     public class LoginModel : PageModel
     {

@@ -22,10 +22,10 @@ namespace API.Controllers
         [HttpGet]
         public async Task<IActionResult> Obtener()
         {
-            var resultado = await _categoriaFlujo.Obtener();
-            if (!resultado.Any())
-                return NoContent();
-            return Ok(resultado);
+                var resultado = await _categoriaFlujo.Obtener();
+                if (!resultado.Any())
+                    return NoContent();
+                return Ok(resultado);
         }
     }
 }

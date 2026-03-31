@@ -43,7 +43,7 @@ namespace Web.Pages.Productos
         private HttpClient ObtenerClienteConToken()
         {
             var tokenClaim = HttpContext.User.Claims
-                .FirstOrDefault(c => c.Type == "AccessToken");
+                .FirstOrDefault(c => c.Type == "Token");
             var cliente = new HttpClient();
             if (tokenClaim != null)
                 cliente.DefaultRequestHeaders.Authorization =

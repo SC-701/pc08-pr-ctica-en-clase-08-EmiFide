@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Reglas;
 
-namespace Web.Pages.Cuenta
+namespace Web.Pages.Seguridad
 {
     public class RegistroModel : PageModel
     {
